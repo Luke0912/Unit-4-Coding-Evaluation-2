@@ -8,6 +8,9 @@ const router = new express.Router();
 
 const masterRouter = require("./controllers/masteraccount.controllers");
 const savingRouter = require("./controllers/saving.controller");
+const FixedRouter = require("./controllers/fixedaccount.controllerr");
+
+router.use("/fixed", FixedRouter);
 
 router.use("/saving", savingRouter);
 
